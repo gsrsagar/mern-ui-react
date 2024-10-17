@@ -13,6 +13,21 @@
   }
 }
 
+.active{
+  background-color: white;
+  padding:0.5rem 0.7rem;
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+th,tr,td{
+  border: 1px solid grey;
+}
+
+.body-rendering{
+  margin: 1rem;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
