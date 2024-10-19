@@ -2,7 +2,6 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { loggedinUserContext } from "./consts";
 import { useDispatch, useSelector } from "react-redux";
 import { getALLUsers } from "./store/actions";
-import { Posts1 } from "./Posts1";
 
 export const TableFill = (props) => {
     return (
@@ -55,7 +54,7 @@ export const listFill = () => {
         </ul>
     )
 }
-export function Posts(props) {
+export function Posts1(props) {
     const context = useContext(loggedinUserContext);
     const { data, loading, error} = useSelector((state)=>state);
     const dispatch = useDispatch();
@@ -110,8 +109,6 @@ export function Posts(props) {
     }
     return (
         <div>
-            <h1>Posts1</h1>
-            <Posts1/>
             <p>{JSON.stringify(loggedinUser)}</p>
             {/* {
                 JSON.stringify(students)
@@ -158,4 +155,4 @@ export function Posts(props) {
     )
 };
 
-export default Posts;
+export default Posts1;
